@@ -1,0 +1,476 @@
+/* https://coolors.co/e4a7af-954b88-8c4883-ffffff */
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'EB Garamond', serif;
+    color: #000000;
+}
+.card {
+    min-height: 20% !important;
+}
+.nav-logo {
+    max-width: 50vw;
+}
+.navbar{
+    font-size: 1.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.9) !important;
+    -webkit-box-shadow: 0px 3px 9px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 3px 9px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.2);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0.0);
+}
+
+.navbar-button-custom {
+    margin: 12px 0;
+}
+
+.navbar-toggler-icon,
+.navbar-button-custom {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCAyMmgtNHYtNGg0djR6bTAtMTJoLTR2NGg0di00em0wLThoLTR2NGg0di00em0zIDB2NGgxN3YtNGgtMTd6bTAgMTJoMTd2LTRoLTE3djR6bTAgOGgxN3YtNGgtMTd2NHoiLz48L3N2Zz4=") !important;
+}
+.navbar-custom {
+    padding: 0 8px;
+}
+.nav-link.active {
+    color: #e4a7af !important;
+}
+.welcome-section {
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 50px;
+}
+.welcome-image {
+    max-width: 90%;
+}
+.welcome-text {
+    max-width: 90%;
+    display: grid;
+}
+.card-custom {
+    margin: 0px 20px;
+}
+
+.button-main {
+	background-color:#e4a7af;
+	-webkit-border-top-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-moz-border-radius-topright:3px;
+	border-top-right-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	-moz-border-radius-bottomright:3px;
+	border-bottom-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-bottom-left-radius:3px;
+    text-indent:0;
+	border:1px solid #e4a7af;
+	display:inline-block;
+	color:#000000;
+	font-size:18px;
+	font-style:normal;
+    height:50px;
+	line-height:50px;
+    width:140px;
+	text-align:center;
+    place-self: center;
+}
+.button-main:hover {
+	background-color:#f8b3be;
+}
+.button-main:active {
+	position:relative;
+	top:1px;
+}
+header {
+    max-width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e4a7af;
+}
+.articles-header{
+    font-size: 20px;
+    margin: 0 auto;
+    color: #000000;
+    background-color: #e4a7af;
+    display: inline;
+    border-bottom: 1px solid #e4a7af;
+    padding: 0 10px;
+}
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.card {
+    background: white;
+    text-decoration: none;
+    color: #000000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in;
+}
+
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    flex: 1;
+    line-height: 1.4;
+}
+
+span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+}
+
+.thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer {
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #e4a7af;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, auto);
+}
+.love {
+    grid-row: 6/6;
+    grid-column: 2/5;
+    align-self: flex-end;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+.instagram {
+    grid-row: 3/3;
+}
+.gmail {
+    grid-row: 4/4;
+}
+.heart {
+    grid-row: 5/5;
+}
+.heart,
+.gmail,
+.instagram {
+    padding: 5px;
+    width: 70px;
+    height: auto;
+    grid-column: 3/4;
+}
+svg:hover {
+    fill: white;
+    cursor: pointer;
+}
+.footer-header {
+    font-weight: 500;
+    margin-top: 15px;
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+footer > * {
+    align-self: center;
+    justify-self: center;
+}
+
+.footer-line {
+    grid-row: 5/6;
+    grid-column: 2/5;
+    border-bottom: 1px solid #333;
+    align-self: auto;
+    justify-self: auto;
+}
+.footer-contacts {
+    grid-column: 1/6;
+    grid-row: 2/2;
+}
+.footer-paragraph {
+    display: block;
+}
+.author {
+    margin: 0;
+    max-width: 90%;
+}
+.about-me-food {
+    padding-top: 10px;
+    max-width: 100%;
+}
+.instagram-media{
+    margin: 0 auto !important;
+}
+.contact-main,
+.index-main,
+.hire-me-main,
+.about-me-main {
+    margin: 150px 0;
+}
+.about-me {
+    margin: 10px 20px;
+}
+
+form {
+    width:50vw; margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+#message {
+    height: 20vh;
+}
+.contact-button {
+    margin: 20px 0;
+}
+.contact-header {
+    width: 50vw;
+    margin: 5vh auto;
+}
+.hire-me-options {
+    margin-top: 10px;
+}
+.contact-right {
+    display: flex;
+    font-size: 1.5em;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #e4a7af;
+    max-width: 100%;
+    margin: auto;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.mail-text,
+.instagram-text {
+    grid-column: 2/4;
+    margin: 10px;
+}
+.mail-text {
+    grid-row: 1/2;
+}
+.instagram-text {
+    grid-row: 2/3;
+}
+.contact-right .gmail,
+.contact-right .instagram {
+    margin: 10px;
+    height: 70px;
+}
+
+@media (min-width: 450px) {
+    .band{
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-logo {
+        max-width: 30vw;
+    }
+    footer {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .footer-line {
+        grid-column: 3/6;
+    }
+    .footer-header {
+        grid-column: 3/6;
+        font-size: 1.3em;
+    }
+    .gmail {
+        grid-column: 3/3;
+        grid-row: 4/5;
+    }
+    .instagram {
+        grid-column: 4/4;
+        grid-row: 4/5;
+    }
+    .heart {
+        grid-column: 5/5;
+        grid-row: 4/5;
+    }
+    .love {
+        grid-column: 4/4;
+        text-align: center;
+    }
+    .footer-paragraph {
+        padding: 0px 10px;
+        align-self: center;
+        justify-self: center;
+        line-height: 2.5;
+    }
+    .footer-contacts {
+        grid-column: 4/4;
+    }
+    .contact-header {
+        border-bottom: 1px solid #e4a7af;
+        margin: 1vh auto;
+    }
+}
+
+@media (min-width: 1000px) {
+    .index-main,
+    .hire-me-main {
+        width: 100%;
+        padding: 0 15vw;
+    }
+    .item-1 {
+        grid-column: 1 / span 2;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .band{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .nav-logo {
+        max-width: 15vw;
+    }
+    .about-me-main {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+    }
+    .author {
+        grid-column: 9/12;
+        grid-row: 2/4;
+    }
+    .about-me-food {
+        border-top: 1px solid #e4a7af;
+        margin-top: 50px;
+        grid-column: 2/5;
+        grid-row: 7/11;
+    }
+    .about-me-left {
+        grid-column: 2/8;
+        grid-row: 2/5;
+    }
+    .about-me-right {
+        margin-top: 50px;
+        border-top: 1px solid #e4a7af;
+        grid-column: 5/12;
+        grid-row: 7/11;
+    }
+    .contact-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact-left {
+        margin: 0 20px;
+        grid-column: 1/2;
+    }
+    .footer-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+/* General Footer Styling */
+.custom-footer {
+    background-color: #f2c7cc; /* Light pink background */
+    color: #000; /* Black text for contrast */
+    padding: 20px 0;
+    font-family: 'EB Garamond', serif; /* Matches the font of the Home button */
+    text-align: center; /* Centers all text */
+    font-size: 16px;
+}
+
+/* Header */
+.footer-header {
+    color: rgba(0, 0, 0, 0.3); /* Faint pink text */
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600; /* Slightly bold for emphasis */
+}
+
+/* Navigation Links */
+.footer-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; /* Centers the links */
+    gap: 15px; /* Adds spacing between links */
+    flex-wrap: wrap; /* Wraps links if needed */
+}
+
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500; /* Matches the style of navigation links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.footer-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; /* Centers the icons */
+    align-items: center;
+    gap: 30px; /* Adds spacing between icons */
+}
+
+.footer-icons a {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-icons a:hover {
+    color: #f45b69; /* Slightly darker pink on hover */
+}
+
+/* Copyright */
+.footer-copyright {
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.6); /* Subtle text color */
+    font-size: 14px;
+    font-weight: 400; /* Regular weight */
+}
+
