@@ -137,7 +137,7 @@
           message: form.message.value,
         };
 
-        emailjs.send("FormSubmit Notification", "template_5tgeu2u", formData)
+        emailjs.send("service_vixumcg", "template_5tgeu2u", formData)
           .then(function() {
             responseMessage.style.display = "block";
             responseMessage.textContent = "Your message was sent successfully!";
