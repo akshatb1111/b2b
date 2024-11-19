@@ -509,6 +509,15 @@ body {
   font-weight: bold; /* Makes the specialty names bold */
 }
 
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: white;  /* Optional, to improve visibility */
+    }
+    .navbar-toggler {
+        background-color: #f8f9fa;
+    }
+}
+
     
     
 
