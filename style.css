@@ -486,6 +486,16 @@ form {
 .specialty-card p {
     color: #555;
 }
+/* Add some top padding to ensure content isn't hidden behind the navbar */
+body {
+    padding-top: 80px; /* Adjust this value if the navbar is larger or smaller */
+}
 
+/* Optional: Add extra space below the navbar if needed */
+.about-me-main {
+    padding-top: 50px; /* Adjust this value to your preference */
+}
+
+    
     
 
