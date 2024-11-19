@@ -407,70 +407,34 @@ form {
     font-weight: bold;
     color: #f4f4f4;
 }
-/* General Footer Styling */
 .custom-footer {
-    background-color: #f2c7cc; /* Light pink background */
-    color: #000; /* Black text for contrast */
-    padding: 20px 0;
-    font-family: 'EB Garamond', serif; /* Matches the font of the Home button */
-    text-align: center; /* Centers all text */
-    font-size: 16px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;    /* Horizontally center items */
+    justify-content: center; /* Vertically center items if necessary */
+    padding: 20px;
 }
 
-/* Header */
-.footer-header {
-    color: rgba(0, 0, 0, 0.3); /* Faint pink text */
-    font-size: 18px;
-    margin-bottom: 20px;
-    font-weight: 600; /* Slightly bold for emphasis */
-}
-
-/* Navigation Links */
 .footer-links {
-    margin: 20px 0;
+    margin: 10px 0; 
     display: flex;
-    justify-content: center; /* Centers the links */
-    gap: 15px; /* Adds spacing between links */
-    flex-wrap: wrap; /* Wraps links if needed */
+    justify-content: center; /* Center the links */
+    gap: 15px; /* Space between links */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
-.footer-links a {
-    color: #000;
-    text-decoration: none;
-    font-weight: 500; /* Matches the style of navigation links */
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-/* Social Icons */
 .footer-icons {
-    margin: 20px 0;
+    margin: 15px 0;
     display: flex;
-    justify-content: center; /* Centers the icons */
+    justify-content: center; /* Center the icons */
     align-items: center;
-    gap: 30px; /* Adds spacing between icons */
+    gap: 20px; /* Space between icons */
 }
 
-.footer-icons a {
-    color: #000;
-    font-size: 24px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    display: inline-block;
-    text-align: center;
-}
-
-.footer-icons a:hover {
-    color: #f45b69; /* Slightly darker pink on hover */
-}
-
-/* Copyright */
 .footer-copyright {
-    margin-top: 20px;
-    color: rgba(0, 0, 0, 0.6); /* Subtle text color */
-    font-size: 14px;
-    font-weight: 400; /* Regular weight */
+    margin-top: 15px;
+    text-align: center; /* Center-align the copyright text */
+    color: rgba(0, 0, 0, 0.6);
 }
+
 
