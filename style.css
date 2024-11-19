@@ -1,3 +1,4 @@
+
 /* https://coolors.co/e4a7af-954b88-8c4883-ffffff */
 * {
     box-sizing: border-box;
@@ -27,45 +28,39 @@ body {
 .card {
     min-height: 20% !important;
 }
-.navbar {
-    padding: 0.5rem 1rem;
+.nav-logo {
+    max-width: 50vw;
+}
+.navbar{
+    font-size: 1.3em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.9) !important;
+    -webkit-box-shadow: 0px 3px 9px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 3px 9px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.2);
 }
 
-.navbar-brand img.nav-logo {
-    height: 40px; /* Adjust logo size */
+.navbar-light .navbar-toggler {
+    border-color: rgba(0,0,0,0.0);
 }
 
-.navbar-toggler {
-    border: none;
+.navbar-button-custom {
+    margin: 12px 0;
 }
 
-.navbar-toggler-icon {
-    background-image: url('data:image/svg+xml,...'); /* Custom SVG icon if needed */
+.navbar-toggler-icon,
+.navbar-button-custom {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCAyMmgtNHYtNGg0djR6bTAtMTJoLTR2NGg0di00em0wLThoLTR2NGg0di00em0zIDB2NGgxN3YtNGgtMTd6bTAgMTJoMTd2LTRoLTE3djR6bTAgOGgxN3YtNGgtMTd2NHoiLz48L3N2Zz4=") !important;
 }
-
-.navbar-nav .nav-item {
-    margin: 0 0.5rem;
+.navbar-custom {
+    padding: 0 8px;
 }
-
-.navbar-nav .nav-link {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-nav .nav-link i {
-    margin-right: 0.5rem;
-}
-
-/* Center logo and toggle button for smaller screens */
-@media (max-width: 768px) {
-    .navbar-brand {
-        margin: auto;
-    }
-    .navbar-nav {
-        text-align: center;
-    }
+.nav-link.active {
+    color: #e4a7af !important;
 }
 .welcome-section {
     max-width: 100%;
