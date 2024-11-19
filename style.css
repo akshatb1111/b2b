@@ -451,4 +451,41 @@ form {
     text-align: center; /* Center-align the copyright text */
     color: rgba(0, 0, 0, 0.6);
 }
+.specialties-header {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.specialty-card {
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.specialty-card:hover {
+    transform: translateY(-10px);
+}
+
+.specialty-card i {
+    font-size: 3rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.specialty-card h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.specialty-card p {
+    color: #555;
+}
+
+    
 
