@@ -8,6 +8,21 @@ body {
     height: 100%;
     font-family: 'EB Garamond', serif;
     color: #000000;
+    background-image: url('doodle-background.png');  /* Replace with your doodle image URL */
+    background-size: cover;  /* This ensures the background covers the entire page */
+    background-position: center;  /* Centers the background */
+    background-attachment: fixed;  /* Keeps the background fixed while scrolling */
+}
+.index-main {
+    padding: 50px 0;  /* Adds padding to the main content */
+}
+
+/* Optional: If you want to apply a semi-transparent overlay to make text stand out */
+.index-main {
+    background: rgba(255, 255, 255, 0.8);  /* Light white background with transparency */
+    border-radius: 10px;  /* Optional: Rounds the corners of the content */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow */
 }
 .card {
     min-height: 20% !important;
@@ -64,37 +79,37 @@ body {
 }
 
 .button-main {
-	background-color:#e4a7af;
-	-webkit-border-top-left-radius:3px;
-	-moz-border-radius-topleft:3px;
-	border-top-left-radius:3px;
-	-webkit-border-top-right-radius:3px;
-	-moz-border-radius-topright:3px;
-	border-top-right-radius:3px;
-	-webkit-border-bottom-right-radius:3px;
-	-moz-border-radius-bottomright:3px;
-	border-bottom-right-radius:3px;
-	-webkit-border-bottom-left-radius:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-bottom-left-radius:3px;
+        background-color:#e4a7af;
+        -webkit-border-top-left-radius:3px;
+        -moz-border-radius-topleft:3px;
+        border-top-left-radius:3px;
+        -webkit-border-top-right-radius:3px;
+        -moz-border-radius-topright:3px;
+        border-top-right-radius:3px;
+        -webkit-border-bottom-right-radius:3px;
+        -moz-border-radius-bottomright:3px;
+        border-bottom-right-radius:3px;
+        -webkit-border-bottom-left-radius:3px;
+        -moz-border-radius-bottomleft:3px;
+        border-bottom-left-radius:3px;
     text-indent:0;
-	border:1px solid #e4a7af;
-	display:inline-block;
-	color:#000000;
-	font-size:18px;
-	font-style:normal;
+        border:1px solid #e4a7af;
+        display:inline-block;
+        color:#000000;
+        font-size:18px;
+        font-style:normal;
     height:50px;
-	line-height:50px;
+        line-height:50px;
     width:140px;
-	text-align:center;
+        text-align:center;
     place-self: center;
 }
 .button-main:hover {
-	background-color:#f8b3be;
+        background-color:#f8b3be;
 }
 .button-main:active {
-	position:relative;
-	top:1px;
+        position:relative;
+        top:1px;
 }
 header {
     max-width: 100%;
@@ -283,7 +298,7 @@ form {
     background: #e4a7af;
     max-width: 100%;
     margin: auto;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 .mail-text,
@@ -416,7 +431,7 @@ form {
 }
 
 .footer-links {
-    margin: 10px 0; 
+    margin: 10px 0;
     display: flex;
     justify-content: center; /* Center the links */
     gap: 15px; /* Space between links */
@@ -436,5 +451,4 @@ form {
     text-align: center; /* Center-align the copyright text */
     color: rgba(0, 0, 0, 0.6);
 }
-
 
