@@ -66,6 +66,7 @@ body {
     display: grid;
     place-items: center;
     margin-bottom: 50px;
+    gap: 20px:
 }
 .welcome-image {
     max-width: 90%;
@@ -509,22 +510,7 @@ body {
   font-weight: bold; /* Makes the specialty names bold */
 }
 
-<style>
-  .welcome-section {
-    display: flex; /* Aligns image and text horizontally */
-    gap: 20px; /* Adds space between the image and the text */
-    align-items: center; /* Aligns items vertically */
-  }
 
-  .welcome-image {
-    width: 150px; /* Set an appropriate width for the image */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-  .welcome-text {
-    max-width: 400px; /* Restrict the text width, if necessary */
-  }
-</style>
 
 
     
