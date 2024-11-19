@@ -124,16 +124,19 @@
 
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
+      // Initialize EmailJS with your User ID
       (function() {
         emailjs.init("4nyqkhPbH9KJ95fYS"); // Replace with your EmailJS User ID
       })();
 
+      // Handle form submission
       const form = document.getElementById('contactForm');
       const responseMessage = document.getElementById('responseMessage');
 
       form.addEventListener('submit', function(event) {
-        event.preventDefault();
+        event.preventDefault(); // Prevent default form submission
 
+        // Prepare form data
         const formData = {
           name: form.firstName.value,
           phone: form.phone.value,
@@ -141,17 +144,24 @@
           message: form.message.value,
         };
 
+        // Log form data to console for debugging
+        console.log('Form Data:', formData);
+
+        // Send form data to EmailJS
         emailjs.send("service_vixumcg", "template_5tgeu2u", formData)
-          .then(function() {
+          .then(function(response) {
+            console.log('Email sent successfully:', response);
+            // Show success message and reset form
             responseMessage.style.display = "block";
             responseMessage.textContent = "Your message was sent successfully!";
             form.reset();
           })
           .catch(function(error) {
+            console.error('Error sending email:', error);
+            // Show error message
             responseMessage.style.display = "block";
             responseMessage.style.color = "red";
             responseMessage.textContent = "Failed to send your message. Please try again later.";
-            console.error("EmailJS Error:", error);
           });
       });
     </script>
