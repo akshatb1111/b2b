@@ -531,7 +531,7 @@ body {
 }
 
 .specialty-card.rounded {
-  background: linear-gradient(145deg, #fceabb, #f8b500);
+  background: linear-gradient(145deg, #ffe4ec, #ffccd5); /* Light pink gradient */
   border-radius: 50px;
 }
 
