@@ -570,6 +570,11 @@ p {
   opacity: 0.2;
 }
 
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust to smaller cards on narrow screens */
+  gap: 20px;
+}
 
 
 
