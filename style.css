@@ -772,7 +772,7 @@ h2 {
 
 
 /* General Widget Styles */
-.widget-container {
+.brain-to-body-widget-container {
     display: flex;
     flex-direction: column; /* Stack the widgets vertically */
     gap: 30px; /* Adds spacing between widgets */
@@ -782,7 +782,7 @@ h2 {
 }
 
 /* Individual Widget Styling */
-.widget {
+.brain-to-body-widget {
     background-color: #ffffff;
     padding: 25px;
     border-radius: 10px;
@@ -795,13 +795,13 @@ h2 {
 }
 
 /* Hover Effect */
-.widget:hover {
+.brain-to-body-widget:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Widget Titles */
-.widget-title {
+.brain-to-body-widget-title {
     font-size: 24px;
     font-weight: bold;
     color: #007bff;
@@ -810,7 +810,7 @@ h2 {
 }
 
 /* Widget List */
-.widget-list {
+.brain-to-body-widget-list {
     list-style-type: none;
     padding: 0;
     font-size: 16px;
@@ -818,53 +818,56 @@ h2 {
     margin: 0;
 }
 
-.widget-list li {
+.brain-to-body-widget-list li {
     margin-bottom: 15px;
 }
 
-.widget-list li::before {
+.brain-to-body-widget-list li::before {
     content: "•";
     color: #007bff;
     font-size: 18px;
     margin-right: 10px;
 }
 
-/* Fixing Text Alignment */
-.widget p {
-    font-size: 16px; /* Ensure consistency in text size */
-    margin-bottom: 15px;
-    color: #555; /* Make text more legible */
-    text-align: left; /* Align text to the left */
-}
-
-.widget-list li:hover {
-    color: #007bff;
-    cursor: pointer;
-}
-
 /* Left, Center, Right Widget Color Themes */
-.left-widget {
+.brain-to-body-left-widget {
     background-color: #f0f8ff;
     border-left: 5px solid #007bff;
 }
 
-.center-widget {
+.brain-to-body-center-widget {
     background-color: #fff8e1;
     border-left: 5px solid #ff9800;
 }
 
-.right-widget {
+.brain-to-body-right-widget {
     background-color: #e8f5e9;
     border-left: 5px solid #4caf50;
 }
 
+/* Button Styles */
+.brain-to-body-call-now-btn, .brain-to-body-know-more-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.brain-to-body-call-now-btn:hover, .brain-to-body-know-more-btn:hover {
+    background-color: darken(#007bff, 10%);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    .widget-container {
+    .brain-to-body-widget-container {
         gap: 30px; /* Adjust spacing between widgets on smaller screens */
     }
 
-    .widget {
+    .brain-to-body-widget {
         width: 100%;
         max-width: 100%; /* Ensure the widgets take full width on smaller screens */
     }
