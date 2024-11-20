@@ -509,65 +509,157 @@ body {
   text-transform: uppercase;
 }
 
-/* Global styles for the container */
-.specialties-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px; /* Adds space between the cards */
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-/* Styles for each specialty card */
-.specialties-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+.specialty-card {
   padding: 20px;
-  box-sizing: border-box;
-  font-size: 16px;
-  display: block;
-  margin-bottom: 20px; /* Space below each card */
   text-align: center;
-  transition: transform 0.3s ease; /* Add animation for hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.specialties-card:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+.specialty-card.tilted {
+  background: linear-gradient(145deg, #e0eafc, #cfdef3);
+  border-radius: 15px;
+  transform: rotate(-2deg);
 }
 
-/* Media query for tablets and larger screens (768px and above) */
-@media (min-width: 768px) {
-  .specialties-card {
-    flex: 1 1 30%; /* Show 3 cards per row */
-  }
+.specialty-card.rounded {
+  background: linear-gradient(145deg, #ffe4ec, #ffccd5); /* Light pink gradient */
+  border-radius: 50px;
 }
 
-/* Media query for mobile devices (up to 768px) */
+.specialty-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #264653;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: #2a9d8f;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 1rem;
+  color: #6a7980;
+  line-height: 1.5;
+}
+
+.specialty-card::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  top: -50%;
+  left: -50%;
+  transform: rotate(45deg);
+  opacity: 0.2;
+}
+
+/* For all screen sizes */
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.about-me {
+  padding: 10px;
+}
+
+.specialty-card {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+/* Specific tweaks for smaller screens */
 @media (max-width: 768px) {
-  .specialties-container {
-    justify-content: center; /* Center the cards on small screens */
+  .specialties-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
   }
 
+  .specialty-card {
+    margin: 10px 0;
+  }
+}
+
+.consultation-process-widget {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-process-widget h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.step-description h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.step-description p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
   .specialties-card {
-    flex: 1 1 100%; /* Cards take up full width on mobile */
-    font-size: 18px; /* Larger text for readability on small screens */
-    display: block;
+    display: block; /* Stack the cards vertically */
+    margin: 10px 0;
+    font-size: 14px;
   }
 }
 
-/* Add a bit of styling to headings or text within cards */
-.specialties-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
 
-.specialties-card p {
-  font-size: 14px;
-  color: #555;
-}
 
-/* Optional: Add some hover effect on the container */
-.specialties-container:hover .specialties-card {
-  transform: scale(1.03); /* Slight zoom on all cards when hovered */
-}
-
+    
+    
