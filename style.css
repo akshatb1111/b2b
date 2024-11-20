@@ -728,16 +728,6 @@ p {
   }
 }
 
-body {
-  font-family: 'EB Garamond', sans-serif;
-  background-color: #f0f4f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
 .process-widget {
   background-color: #ffffff;
   padding: 20px;
