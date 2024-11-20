@@ -771,6 +771,7 @@ h2 {
   display: block;
 }
 
+
 /* General Widget Styles */
 .widget-container {
     display: flex;
@@ -790,7 +791,8 @@ h2 {
     width: 100%; /* Ensure full width for each widget */
     max-width: 100%; /* Remove max-width for full flexibility */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
+    text-align: left; /* Ensure left alignment for text */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Hover Effect */
@@ -815,11 +817,11 @@ h2 {
     padding: 0;
     font-size: 16px;
     color: #555;
+    margin: 0;
 }
 
 .widget-list li {
     margin-bottom: 15px;
-    line-height: 1.6;
 }
 
 .widget-list li::before {
@@ -827,6 +829,13 @@ h2 {
     color: #007bff;
     font-size: 18px;
     margin-right: 10px;
+}
+
+/* Fixing Text Alignment */
+.widget p {
+    font-size: 16px; /* Ensure consistency in text size */
+    margin-bottom: 15px;
+    color: #555; /* Make text more legible */
 }
 
 .widget-list li:hover {
@@ -861,5 +870,3 @@ h2 {
         max-width: 100%; /* Ensure the widgets take full width on smaller screens */
     }
 }
-
-
