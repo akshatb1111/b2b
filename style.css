@@ -606,51 +606,6 @@ p {
   }
 }
 
-.consultation-process-widget {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.consultation-process-widget h2 {
-    text-align: center;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.step {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.step-number {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: #4CAF50;
-    color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 15px;
-}
-
-.step-description h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.step-description p {
-    font-size: 16px;
-    color: #555;
-}
-
 @media (max-width: 600px) {
   .specialties-card {
     display: block; /* Stack the cards vertically */
@@ -659,74 +614,97 @@ p {
   }
 }
 
-
-/* General styling for the widget container */
+/* General Styling for the Widget Container */
 .appointment-widget {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 30px;
+  background-color: #f8f8f8;  /* Adjusted to match the website background color */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  margin: 30px auto;
+  font-family: 'Arial', sans-serif;
+  border: 2px solid #e0e0e0;
 }
 
-/* Left side - Book Appointment */
+/* Left Section - Book Appointment */
 .left-widget {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
+  padding: 10px 20px;
 }
 
 .left-widget h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 20px;
   color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2d3d4f; /* Adjusted to your main text color */
 }
 
 .call-now-btn {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  font-size: 16px;
+  padding: 14px 30px;
+  background-color: #5cb85c;  /* Green button - matching the website theme */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 .call-now-btn:hover {
-  background-color: #0056b3;
+  background-color: #4cae4c;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Right side - Online Consultation */
+/* Right Section - Online Consultation */
 .right-widget {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  text-align: right;
+  padding: 10px 20px;
 }
 
 .right-widget h3 {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 20px;
   color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #2d3d4f; /* Adjusted to your main text color */
 }
 
 .know-more-btn {
-  padding: 10px 20px;
-  background-color: #25d366;
-  color: white;
-  font-size: 16px;
+  padding: 14px 30px;
+  background-color: #ff9900;  /* Yellow button - matching a warm color palette */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 .know-more-btn:hover {
-  background-color: #128c7e;
+  background-color: #e68900;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive Design for Mobile Screens */
@@ -735,6 +713,7 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
   }
 
   .left-widget, .right-widget {
@@ -744,9 +723,7 @@ p {
 
   .call-now-btn, .know-more-btn {
     width: 100%;
+    font-size: 16px;
+    padding: 14px;
   }
 }
-
-
-    
-    
