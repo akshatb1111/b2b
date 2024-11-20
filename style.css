@@ -660,6 +660,93 @@ p {
 }
 
 
+/* General styling for the widget container */
+.appointment-widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Left side - Book Appointment */
+.left-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left-widget h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.call-now-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-now-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Right side - Online Consultation */
+.right-widget {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.right-widget h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.know-more-btn {
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: #128c7e;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .appointment-widget {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-widget, .right-widget {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .call-now-btn, .know-more-btn {
+    width: 100%;
+  }
+}
+
 
     
     
