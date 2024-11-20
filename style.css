@@ -1,3 +1,4 @@
+
 /* https://coolors.co/e4a7af-954b88-8c4883-ffffff */
 * {
     box-sizing: border-box;
@@ -569,8 +570,88 @@ p {
   opacity: 0.2;
 }
 
+/* For all screen sizes */
 .specialties-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust to smaller cards on narrow screens */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
+
+.about-me {
+  padding: 10px;
+}
+
+.specialty-card {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+/* Specific tweaks for smaller screens */
+@media (max-width: 768px) {
+  .specialties-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .specialty-card {
+    margin: 10px 0;
+  }
+}
+
+.consultation-process-widget {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-process-widget h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.step-description h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.step-description p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+
+    
+    
