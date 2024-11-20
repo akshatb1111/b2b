@@ -570,11 +570,42 @@ p {
   opacity: 0.2;
 }
 
+/* For all screen sizes */
 .specialties-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust to smaller cards on narrow screens */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
+
+.about-me {
+  padding: 10px;
+}
+
+.specialty-card {
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+/* Specific tweaks for smaller screens */
+@media (max-width: 768px) {
+  .specialties-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+
+  .specialty-card {
+    margin: 10px 0;
+  }
+}
+
 
 
 
