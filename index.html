@@ -1,106 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Brain to Body - Think. Eat. Move.">
-    <meta name="author" content="Aakash Bhandari">
+    <meta name="author" content="aakashb1111">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Brain to Body - Think. Eat. Move.</title>
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="nav-logo" src="logo.png" alt="Brain to Body Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="hire-me.html"><i class="fas fa-briefcase"></i> Workspace</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img class="nav-logo" src="logo.png" alt="Logo">
+        </a>
+        
+        <!-- Toggle button for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hire-me.html">
+                        <i class="fas fa-briefcase"></i> Workspace
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        <i class="fas fa-info-circle"></i> About Us
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <main>
-        <section class="welcome-section">
-            <img src="food.jpg" alt="Healthy Food" class="welcome-image">
-            <div class="welcome-text">
-                <p>"You are what you think. You are what you eat. You are how you move. It's all about Brain to Body!"</p>
-                <p class="text-muted">-Aruna Oswal & Soumya Chavaraddi</p>
-            </div>
-        </section>
 
-        <section class="specialties-section">
-            <h3 class="section-title">✨ Specialties ✨</h3>
-            <div class="specialties-grid">
-                <!-- Specialty Cards -->
-                <div class="specialty-card"><span class="icon">🧠</span><h4>Mindset Coaching</h4><p>Focus on fostering positive thinking and resilience.</p></div>
-                <div class="specialty-card"><span class="icon">🔄</span><h4>Brain Reprogramming</h4><p>Techniques like visualization, affirmations, and self-hypnosis.</p></div>
-                <div class="specialty-card"><span class="icon">🧘</span><h4>Stress Management</h4><p>Strategies like mindfulness, meditation, and relaxation techniques.</p></div>
-                <div class="specialty-card"><span class="icon">💖</span><h4>Emotional Healing</h4><p>Use of techniques like NLP, EFT, and therapy for emotional well-being.</p></div>
-                <div class="specialty-card"><span class="icon">🌙</span><h4>Sleep Health</h4><p>Guidance on improving sleep quality and managing related disorders.</p></div>
-                <div class="specialty-card"><span class="icon">🥗</span><h4>Personalized Nutrition</h4><p>Tailored diet plans for specific health goals or conditions.</p></div>
-                <div class="specialty-card"><span class="icon">⚖️</span><h4>Weight Management</h4><p>Holistic approaches for sustainable weight loss or maintenance.</p></div>
-                <div class="specialty-card"><span class="icon">🏋️</span><h4>Fitness and Movement</h4><p>Focus on functional fitness, yoga, or personalized exercise plans.</p></div>
-                <div class="specialty-card"><span class="icon">🩺</span><h4>Disease Prevention</h4><p>Addressing chronic conditions like diabetes, PCOS, or hypertension.</p></div>
-                <div class="specialty-card"><span class="icon">🌱</span><h4>Sustainable Lifestyle Changes</h4><p>Practical strategies for integrating wellness into daily life.</p></div>
-                <div class="specialty-card"><span class="icon">💡</span><h4>Behavioral Transformation</h4><p>Techniques for rewiring habits and overcoming mental blocks.</p></div>
-                <div class="specialty-card"><span class="icon">🛁</span><h4>Detox and Cleansing</h4><p>Evidence-based approaches to refresh and rejuvenate the body.</p></div>
-            </div>
-        </section>
+<main class="index-main">
+  <div class="welcome-section">
+    <img src="food.jpg" alt="Image of food" class="welcome-image">
+    <div class="welcome-text">
+      <br>
+      <p>"You are what you think. You are what you eat. You are how you move. It's all about Brain to Body!"</p>
+      <p class="text-muted">-Aruna Oswal & Soumya Chavaraddi</p>
+    </div>
+  </div>
 
-        <section class="instagram-post">
-            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/C_ht30FSWM_/?igsh=MWlqamRxeTlubDB5aQ==" data-instgrm-version="14"></blockquote>
+    
+<div class="about-me-right">
+  <div class="about-me">
+    <h3 class="section-title">✨ Specialties ✨</h3>
+    <div class="specialties-grid">
+      <div class="specialty-card tilted">
+        <span class="icon">🧠</span>
+        <h4>Mindset Coaching</h4>
+        <p>Focus on fostering positive thinking and resilience.</p>
+      </div>
+      <div class="specialty-card rounded">
+        <span class="icon">🔄</span>
+        <h4>Brain Reprogramming</h4>
+        <p>Techniques like visualization, affirmations, and self-hypnosis.</p>
+      </div>
+      <div class="specialty-card tilted">
+        <span class="icon">🧘</span>
+        <h4>Stress Management</h4>
+        <p>Strategies like mindfulness, meditation, and relaxation techniques.</p>
+      </div>
+      <div class="specialty-card rounded">
+        <span class="icon">💖</span>
+        <h4>Emotional Healing</h4>
+        <p>Use of techniques like NLP, EFT, and therapy for emotional well-being.</p>
+      </div>
+      <div class="specialty-card tilted">
+        <span class="icon">🌙</span>
+        <h4>Sleep Health</h4>
+        <p>Guidance on improving sleep quality and managing related disorders.</p>
+      </div>
+      <div class="specialty-card rounded">
+        <span class="icon">🥗</span>
+        <h4>Personalized Nutrition</h4>
+        <p>Tailored diet plans for specific health goals or conditions.</p>
+      </div>
+      <div class="specialty-card tilted">
+        <span class="icon">⚖️</span>
+        <h4>Weight Management</h4>
+        <p>Holistic approaches for sustainable weight loss or maintenance.</p>
+      </div>
+      <div class="specialty-card rounded">
+        <span class="icon">🏋️</span>
+        <h4>Fitness and Movement</h4>
+        <p>Focus on functional fitness, yoga, or personalized exercise plans.</p>
+      </div>
+      <div class="specialty-card tilted">
+        <span class="icon">🩺</span>
+        <h4>Disease Prevention</h4>
+        <p>Addressing chronic conditions like diabetes, PCOS, or hypertension.</p>
+      </div>
+      <div class="specialty-card rounded">
+        <span class="icon">🌱</span>
+        <h4>Sustainable Lifestyle Changes</h4>
+        <p>Practical strategies for integrating wellness into daily life.</p>
+      </div>
+      <div class="specialty-card tilted">
+        <span class="icon">💡</span>
+        <h4>Behavioral Transformation</h4>
+        <p>Techniques for rewiring habits and overcoming mental blocks.</p>
+      </div>
+      <div class="specialty-card rounded">
+        <span class="icon">🛁</span>
+        <h4>Detox and Cleansing</h4>
+        <p>Evidence-based approaches to refresh and rejuvenate the body.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+        <!-- Instagram Post Embed -->
+        <div class="instagram-post">
+            <blockquote class="instagram-media" 
+                data-instgrm-permalink="https://www.instagram.com/reel/C_ht30FSWM_/?igsh=MWlqamRxeTlubDB5aQ==" 
+                data-instgrm-version="14" 
+                style="max-width:540px; margin:auto; padding:0;">
+            </blockquote>
             <script async src="//www.instagram.com/embed.js"></script>
-        </section>
-    </main>
-
-    <footer class="custom-footer">
-        <div class="container text-center">
-            <h5 class="footer-header">Brain to Body</h5>
-            <div class="footer-links">
-                <a href="hire-me.html">Workspace</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <div class="footer-icons">
-                <a href="https://www.instagram.com/braintobody_?igsh=bjJsdng2am1tZWll" target="_blank" title="Follow us on Instagram"><i class="ion-social-instagram-outline social-icon"></i></a>
-                <a href="https://www.linkedin.com/company/brain-to-body-nutrition/" target="_blank" title="Connect with us on LinkedIn"><i class="ion-social-linkedin-outline social-icon"></i></a>
-                <a href="https://wa.me/919226307208" target="_blank" title="Chat with us on WhatsApp"><i class="ion-social-whatsapp-outline social-icon"></i></a>
-                <a href="https://youtube.com/@brain_to_body?si=2rRLpzQInzvI1Y7o" target="_blank" title="Subscribe to our YouTube channel"><i class="ion-social-youtube-outline social-icon"></i></a>
-                <a href="mailto:braintobodynutrition@gmail.com" title="Email us"><i class="ion-email social-icon"></i></a>
-            </div>
-            <p class="footer-copyright">
-                <a href="https://akashbhandari.netlify.app" target="_blank">Made by Aakash Bhandari © 2024</a>
-            </p>
         </div>
-    </footer>
+    <br>
+    </main>
+<footer class="custom-footer">
+    <div class="container text-center">
+        <!-- Header -->
+        <h5 class="footer-header">Brain to Body</h5>
 
+        <!-- Navigation Links -->
+        <div class="footer-links">
+            <a href="hire-me.html">Workspace</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/braintobody_?igsh=bjJsdng2am1tZWll" target="_blank" title="Follow us on Instagram">
+                <i class="ion-social-instagram-outline social-icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/brain-to-body-nutrition/" target="_blank" title="Connect with us on LinkedIn">
+                <i class="ion-social-linkedin-outline social-icon"></i>
+            </a>
+            <a href="https://wa.me/919226307208" target="_blank" title="Chat with us on WhatsApp">
+                <i class="ion-social-whatsapp-outline social-icon"></i>
+            </a>
+            <a href="https://youtube.com/@brain_to_body?si=2rRLpzQInzvI1Y7o" target="_blank" title="Subscribe to our YouTube channel">
+                <i class="ion-social-youtube-outline social-icon"></i>
+            </a>
+            <a href="mailto:braintobodynutrition@gmail.com" title="Email us">
+                <i class="ion-email social-icon"></i>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+     <p class="footer-copyright">
+    <a href="https://akashbhandari.netlify.app" target="_blank" style="text-decoration: none; color: inherit;">
+        Made by Aakash Bhandari © 2024
+    </a>
+</p>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlR0RQGpG8SetfNbJ1Fd3L1oiwVfuZIvfLXJyP0n8A7PPVFxNbp1WjS3GKh" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIqFv8sjGBbvDkCkJg9Am1j5RrgrVVNjl1QlmKT8jrJRMzDvrj3" crossorigin="anonymous"></script>
-
 </body>
-
 </html>
