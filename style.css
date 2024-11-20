@@ -807,7 +807,7 @@ h2 {
     font-weight: bold;
     color: #007bff;
     margin-bottom: 20px;
-    text-align: left; /* Ensure title is left-aligned */
+    text-align: right; /* Ensure title is right-aligned */
 }
 
 /* Widget List */
