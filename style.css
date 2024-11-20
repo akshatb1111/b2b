@@ -774,7 +774,7 @@ h2 {
 /* General Widget Styles */
 .widget-container {
     display: flex;
-    flex-direction: column; /* Align widgets vertically */
+    flex-direction: column; /* Stack the widgets vertically */
     gap: 30px; /* Adds spacing between widgets */
     margin: 40px auto;
     width: 90%;
@@ -787,8 +787,8 @@ h2 {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 380px;
+    width: 100%; /* Ensure full width for each widget */
+    max-width: 100%; /* Remove max-width for full flexibility */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left;
 }
@@ -858,7 +858,8 @@ h2 {
 
     .widget {
         width: 100%;
-        max-width: 100%; /* Make each widget take full width on small screens */
+        max-width: 100%; /* Ensure the widgets take full width on smaller screens */
     }
 }
+
 
