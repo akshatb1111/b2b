@@ -807,7 +807,7 @@ h2 {
     font-weight: bold;
     color: #4a4a4a;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left; /* Align the title to the left */
     color: #007bff;
 }
 
@@ -836,6 +836,7 @@ h2 {
     font-size: 16px; /* Ensure consistency in text size */
     margin-bottom: 15px;
     color: #555; /* Make text more legible */
+    text-align: left; /* Align text to the left */
 }
 
 .widget-list li:hover {
@@ -870,3 +871,4 @@ h2 {
         max-width: 100%; /* Ensure the widgets take full width on smaller screens */
     }
 }
+
