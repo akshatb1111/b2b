@@ -788,8 +788,8 @@ h2 {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Ensure full width for each widget */
-    max-width: 100%; /* Remove max-width for full flexibility */
+    width: 100%;
+    max-width: 100%; /* Ensure full width for each widget */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: left; /* Ensure left alignment for text */
     line-height: 1.6; /* Improve readability */
@@ -805,10 +805,9 @@ h2 {
 .widget-title {
     font-size: 24px;
     font-weight: bold;
-    color: #4a4a4a;
+    color: #007bff;
     margin-bottom: 20px;
     text-align: left; /* Ensure title is left-aligned */
-    color: #007bff;
 }
 
 /* Widget List */
@@ -848,19 +847,16 @@ h2 {
 .left-widget {
     background-color: #f0f8ff;
     border-left: 5px solid #007bff;
-    text-align: left; /* Fix title alignment */
 }
 
 .center-widget {
     background-color: #fff8e1;
     border-left: 5px solid #ff9800;
-    text-align: left; /* Fix title alignment */
 }
 
 .right-widget {
     background-color: #e8f5e9;
     border-left: 5px solid #4caf50;
-    text-align: left; /* Fix title alignment */
 }
 
 /* Responsive Design */
@@ -874,5 +870,3 @@ h2 {
         max-width: 100%; /* Ensure the widgets take full width on smaller screens */
     }
 }
-
-
