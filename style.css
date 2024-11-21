@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 html,
 body {
     width: 100%;
@@ -12,9 +13,13 @@ body {
     background-size: cover;  /* This ensures the background covers the entire page */
     background-position: center;  /* Centers the background */
     background-attachment: fixed;  /* Keeps the background fixed while scrolling */
+    padding-top: 80px; /* This ensures content isn't hidden behind the navbar */
 }
+
 .index-main {
     padding: 50px 0;  /* Adds padding to the main content */
+    display: grid;
+    place-items: center;
 }
 
 /* Optional: If you want to apply a semi-transparent overlay to make text stand out */
@@ -24,13 +29,16 @@ body {
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow */
 }
+
 .card {
     min-height: 20% !important;
 }
+
 .nav-logo {
     max-width: 50vw;
 }
-.navbar{
+
+.navbar {
     font-size: 1.3em;
     position: fixed;
     top: 0;
@@ -55,69 +63,66 @@ body {
 .navbar-button-custom {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCAyMmgtNHYtNGg0djR6bTAtMTJoLTR2NGg0di00em0wLThoLTR2NGg0di00em0zIDB2NGgxN3YtNGgtMTd6bTAgMTJoMTd2LTRoLTE3djR6bTAgOGgxN3YtNGgtMTd2NHoiLz48L3N2Zz4=") !important;
 }
+
 .navbar-custom {
     padding: 0 8px;
 }
+
 .nav-link.active {
     color: #e4a7af !important;
 }
+
 .welcome-section {
     max-width: 100%;
     display: grid;
     place-items: center;
     margin-bottom: 50px;
-    gap: 20px:
+    gap: 20px;
 }
+
 .welcome-image {
     max-width: 90%;
 }
+
 .welcome-text {
     max-width: 90%;
     display: grid;
 }
+
 .card-custom {
     margin: 0px 20px;
 }
 
 .button-main {
-        background-color:#e4a7af;
-        -webkit-border-top-left-radius:3px;
-        -moz-border-radius-topleft:3px;
-        border-top-left-radius:3px;
-        -webkit-border-top-right-radius:3px;
-        -moz-border-radius-topright:3px;
-        border-top-right-radius:3px;
-        -webkit-border-bottom-right-radius:3px;
-        -moz-border-radius-bottomright:3px;
-        border-bottom-right-radius:3px;
-        -webkit-border-bottom-left-radius:3px;
-        -moz-border-radius-bottomleft:3px;
-        border-bottom-left-radius:3px;
-    text-indent:0;
-        border:1px solid #e4a7af;
-        display:inline-block;
-        color:#000000;
-        font-size:18px;
-        font-style:normal;
-    height:50px;
-        line-height:50px;
-    width:140px;
-        text-align:center;
+    background-color: #e4a7af;
+    border-radius: 3px;
+    border: 1px solid #e4a7af;
+    display: inline-block;
+    color: #000000;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    width: 140px;
+    text-align: center;
     place-self: center;
 }
+
 .button-main:hover {
-        background-color:#f8b3be;
+    background-color: #f8b3be;
 }
+
 .button-main:active {
-        position:relative;
-        top:1px;
+    position: relative;
+    top: 1px;
 }
+
 header {
     max-width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid #e4a7af;
 }
-.articles-header{
+
+.articles-header {
     font-size: 20px;
     margin: 0 auto;
     color: #000000;
@@ -126,13 +131,13 @@ header {
     border-bottom: 1px solid #e4a7af;
     padding: 0 10px;
 }
+
 .band {
     width: 90%;
     max-width: 1240px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
     grid-gap: 20px;
 }
 
@@ -190,28 +195,35 @@ footer {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, auto);
 }
+
 .love {
     grid-row: 6/6;
     grid-column: 2/5;
     align-self: flex-end;
 }
+
 a {
     color: #000000;
     text-decoration: none;
 }
+
 a:hover {
     cursor: pointer;
     color: #ffffff;
 }
+
 .instagram {
     grid-row: 3/3;
 }
+
 .gmail {
     grid-row: 4/4;
 }
+
 .heart {
     grid-row: 5/5;
 }
+
 .heart,
 .gmail,
 .instagram {
@@ -220,10 +232,12 @@ a:hover {
     height: auto;
     grid-column: 3/4;
 }
+
 svg:hover {
     fill: white;
     cursor: pointer;
 }
+
 .footer-header {
     font-weight: 500;
     margin-top: 15px;
@@ -243,36 +257,44 @@ footer > * {
     align-self: auto;
     justify-self: auto;
 }
+
 .footer-contacts {
     grid-column: 1/6;
     grid-row: 2/2;
 }
+
 .footer-paragraph {
     display: block;
 }
+
 .author {
     margin: 0;
     max-width: 90%;
 }
+
 .about-me-food {
     padding-top: 10px;
     max-width: 100%;
 }
-.instagram-media{
+
+.instagram-media {
     margin: 0 auto !important;
 }
+
 .contact-main,
 .index-main,
 .hire-me-main,
 .about-me-main {
     margin: 150px 0;
 }
+
 .about-me {
     margin: 10px 20px;
 }
 
 form {
-    width:50vw; margin: auto;
+    width: 50vw;
+    margin: auto;
     display: grid;
     place-items: center;
 }
@@ -280,16 +302,20 @@ form {
 #message {
     height: 20vh;
 }
+
 .contact-button {
     margin: 20px 0;
 }
+
 .contact-header {
     width: 50vw;
     margin: 5vh auto;
 }
+
 .hire-me-options {
     margin-top: 10px;
 }
+
 .contact-right {
     display: flex;
     font-size: 1.5em;
@@ -299,68 +325,83 @@ form {
     background: #e4a7af;
     max-width: 100%;
     margin: auto;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
+
 .mail-text,
 .instagram-text {
     grid-column: 2/4;
     margin: 10px;
 }
+
 .mail-text {
     grid-row: 1/2;
 }
+
 .instagram-text {
     grid-row: 2/3;
 }
+
 .contact-right .gmail,
 .contact-right .instagram {
     margin: 10px;
     height: 70px;
 }
 
+/* Media Queries for Responsive Design */
 @media (min-width: 450px) {
-    .band{
+    .band {
         grid-template-columns: 1fr 1fr;
     }
+
     .nav-logo {
         max-width: 30vw;
     }
+
     footer {
         grid-template-columns: repeat(7, 1fr);
     }
+
     .footer-line {
         grid-column: 3/6;
     }
+
     .footer-header {
         grid-column: 3/6;
         font-size: 1.3em;
     }
+
     .gmail {
         grid-column: 3/3;
         grid-row: 4/5;
     }
+
     .instagram {
         grid-column: 4/4;
         grid-row: 4/5;
     }
+
     .heart {
         grid-column: 5/5;
         grid-row: 4/5;
     }
+
     .love {
         grid-column: 4/4;
         text-align: center;
     }
+
     .footer-paragraph {
         padding: 0px 10px;
         align-self: center;
         justify-self: center;
         line-height: 2.5;
     }
+
     .footer-contacts {
         grid-column: 4/4;
     }
+
     .contact-header {
         border-bottom: 1px solid #e4a7af;
         margin: 1vh auto;
@@ -373,473 +414,207 @@ form {
         width: 100%;
         padding: 0 15vw;
     }
+
     .item-1 {
         grid-column: 1 / span 2;
     }
+
     h1 {
         font-size: 24px;
     }
-    .band{
+
+    .band {
         grid-template-columns: repeat(4, 1fr);
     }
+
     .nav-logo {
         max-width: 15vw;
     }
+
     .about-me-main {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(12, auto);
     }
+
     .author {
         grid-column: 9/12;
         grid-row: 2/4;
     }
+
     .about-me-food {
         border-top: 1px solid #e4a7af;
         margin-top: 50px;
         grid-column: 2/5;
         grid-row: 7/11;
     }
+
     .about-me-left {
         grid-column: 2/8;
         grid-row: 2/5;
     }
+
     .about-me-right {
         margin-top: 50px;
         border-top: 1px solid #e4a7af;
         grid-column: 5/12;
         grid-row: 7/11;
     }
+
     .contact-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
     .contact-left {
         margin: 0 20px;
         grid-column: 1/2;
     }
+
     .footer-header {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #f4f4f4;
-}
-.custom-footer {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;    /* Horizontally center items */
-    justify-content: center; /* Vertically center items if necessary */
-    padding: 20px;
-}
-
-.footer-links {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center; /* Center the links */
-    gap: 15px; /* Space between links */
-    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
-}
-
-.footer-icons {
-    margin: 15px 0;
-    display: flex;
-    justify-content: center; /* Center the icons */
-    align-items: center;
-    gap: 20px; /* Space between icons */
-}
-
-.footer-copyright {
-    margin-top: 15px;
-    text-align: center; /* Center-align the copyright text */
-    color: rgba(0, 0, 0, 0.6);
-}
-.specialties-header {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.specialty-card {
-    text-align: center;
-    padding: 20px;
-    margin: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.specialty-card:hover {
-    transform: translateY(-10px);
-}
-
-.specialty-card i {
-    font-size: 3rem;
-    color: #3498db;
-    margin-bottom: 10px;
-}
-
-.specialty-card h5 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.specialty-card p {
-    color: #555;
-}
-/* Add some top padding to ensure content isn't hidden behind the navbar */
-body {
-    padding-top: 80px; /* Adjust this value if the navbar is larger or smaller */
-}
-
-.about-me {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: 'EB Garamond', serif;
-}
-
-.section-title {
-  font-size: 1.8rem;
-  text-align: center;
-  color: #2a9d8f;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.specialties-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.specialty-card {
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.specialty-card.tilted {
-  background: linear-gradient(145deg, #e0eafc, #cfdef3);
-  border-radius: 15px;
-  transform: rotate(-2deg);
-}
-
-.specialty-card.rounded {
-  background: linear-gradient(145deg, #ffe4ec, #ffccd5); /* Light pink gradient */
-  border-radius: 50px;
-}
-
-.specialty-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.icon {
-  font-size: 2.5rem;
-  color: #264653;
-  margin-bottom: 15px;
-}
-
-h4 {
-  font-size: 1.4rem;
-  color: #2a9d8f;
-  margin: 10px 0;
-}
-
-p {
-  font-size: 1rem;
-  color: #6a7980;
-  line-height: 1.5;
-}
-
-.specialty-card::before {
-  content: '';
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  background: rgba(255, 255, 255, 0.1);
-  top: -50%;
-  left: -50%;
-  transform: rotate(45deg);
-  opacity: 0.2;
-}
-
-/* For all screen sizes */
-.specialties-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.about-me {
-  padding: 10px;
-}
-
-.specialty-card {
-  padding: 15px;
-  text-align: center;
-  width: 100%;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-p {
-  font-size: 0.9rem;
-}
-
-/* Specific tweaks for smaller screens */
-@media (max-width: 768px) {
-  .specialties-grid {
-    grid-template-columns: 1fr; /* Single column layout for smaller screens */
-  }
-
-  .specialty-card {
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .specialties-card {
-    display: block; /* Stack the cards vertically */
-    margin: 10px 0;
-    font-size: 14px;
-  }
-}
-
-/* General Styling for the Widget Container */
-.appointment-widget {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-  background-color: #f8f8f8;  /* Adjusted to match the website background color */
-  border-radius: 15px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  max-width: 1100px;
-  margin: 30px auto;
-  font-family: 'EB Garamond', sans-serif;
-  border: 2px solid #e0e0e0;
-}
-
-/* Left Section - Book Appointment */
-.left-widget {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  padding: 10px 20px;
-}
-
-.left-widget h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: #333;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #2d3d4f; /* Adjusted to your main text color */
-}
-
-.call-now-btn {
-  padding: 14px 30px;
-  background-color: #5cb85c;  /* Green button - matching the website theme */
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-}
-
-.call-now-btn:hover {
-  background-color: #4cae4c;
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Right Section - Online Consultation */
-.right-widget {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
-  padding: 10px 20px;
-}
-
-.right-widget h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: #333;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #2d3d4f; /* Adjusted to your main text color */
-}
-
-.know-more-btn {
-  padding: 14px 30px;
-  background-color: #ff9900;  /* Yellow button - matching a warm color palette */
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
-}
-
-.know-more-btn:hover {
-  background-color: #e68900;
-  transform: translateY(-4px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Responsive Design for Mobile Screens */
-@media (max-width: 768px) {
-  .appointment-widget {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .left-widget, .right-widget {
-    align-items: center;
-    margin-bottom: 20px;
-  }
-
-  .call-now-btn, .know-more-btn {
-    width: 100%;
-    font-size: 16px;
-    padding: 14px;
-  }
-}
-
-
-/* General Widget Styles */
-.brain-to-body-widget-container {
-    display: flex;
-    flex-direction: column; /* Stack the widgets vertically */
-    gap: 30px; /* Adds spacing between widgets */
-    margin: 40px auto;
-    width: 90%;
-    max-width: 1200px;
-}
-
-/* Individual Widget Styling */
-.brain-to-body-widget {
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 100%; /* Ensure full width for each widget */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left; /* Ensure left alignment for text */
-    line-height: 1.6; /* Improve readability */
-}
-
-/* Hover Effect */
-.brain-to-body-widget:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* Widget Titles */
-.brain-to-body-widget-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #e4a7af;
-    margin-bottom: 20px;
-    text-align: right; /* Ensure title is right-aligned */
-}
-
-/* Widget List */
-.brain-to-body-widget-list {
-    list-style-type: none;
-    padding: 0;
-    font-size: 16px;
-    color: #555;
-    margin: 0;
-}
-
-.brain-to-body-widget-list li {
-    margin-bottom: 15px;
-}
-
-.brain-to-body-widget-list li::before {
-    content: "•";
-    color: #007bff;
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-/* Left, Center, Right Widget Color Themes */
-.brain-to-body-left-widget {
-    background-color: #f0f8ff;
-    border-left: 5px solid #007bff;
-}
-
-.brain-to-body-center-widget {
-    background-color: #fff8e1;
-    border-left: 5px solid #ff9800;
-}
-
-.brain-to-body-right-widget {
-    background-color: #e8f5e9;
-    border-left: 5px solid #4caf50;
-}
-
-/* Button Styles */
-.brain-to-body-call-now-btn, .brain-to-body-know-more-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.brain-to-body-call-now-btn:hover, .brain-to-body-know-more-btn:hover {
-    background-color: darken(#007bff, 10%);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .brain-to-body-widget-container {
-        gap: 30px; /* Adjust spacing between widgets on smaller screens */
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #f4f4f4;
     }
 
-    .brain-to-body-widget {
-        width: 100%;
-        max-width: 100%; /* Ensure the widgets take full width on smaller screens */
+    .custom-footer {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;    /* Horizontally center items */
+        justify-content: center; /* Vertically center items if necessary */
+        padding: 20px;
     }
-}
 
-@media screen and (max-width: 768px) {
-    footer {
-        text-align: center !important;
-    }
     .footer-links {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center; /* Center the links */
+        gap: 15px; /* Space between links */
+        flex-wrap: wrap; /* Ensure wrapping on smaller screens */
     }
-    .footer-links a {
-        margin: 5px 0 !important;
+
+    .footer-icons {
+        margin: 15px 0;
+        display: flex;
+        justify-content: center; /* Center the icons */
+        align-items: center;
+        gap: 20px; /* Space between icons */
+    }
+
+    .footer-copyright {
+        margin-top: 15px;
+        text-align: center; /* Center-align the copyright text */
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .specialties-header {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .specialty-card {
+        text-align: center;
+        padding: 20px;
+        margin: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .specialty-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .specialty-card i {
+        font-size: 3rem;
+        color: #3498db;
+        margin-bottom: 10px;
+    }
+
+    .specialty-card h5 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .specialty-card p {
+        color: #555;
+    }
+
+    .specialties-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .about-me {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-family: 'EB Garamond', serif;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        text-align: center;
+        color: #2a9d8f;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .appointment-widget {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        background-color: #f8f8f8;  /* Adjusted to match the website background color */
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        max-width: 1100px;
+        margin: 30px auto;
+        font-family: 'EB Garamond', sans-serif;
+        border: 2px solid #e0e0e0;
+    }
+
+    /* Responsive Design for Mobile Screens */
+    @media (max-width: 768px) {
+        .appointment-widget {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .left-widget, .right-widget {
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .call-now-btn, .know-more-btn {
+            width: 100%;
+            font-size: 16px;
+            padding: 14px;
+            max-width: none; /* Remove max-width restriction */
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        footer {
+            text-align: center !important;
+        }
+
+        .footer-links {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+
+        .footer-links a {
+            margin: 5px 0 !important;
+        }
     }
 }
