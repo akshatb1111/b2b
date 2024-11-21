@@ -20,10 +20,6 @@ body {
     padding: 50px 0;  /* Adds padding to the main content */
     display: grid;
     place-items: center;
-}
-
-/* Optional: If you want to apply a semi-transparent overlay to make text stand out */
-.index-main {
     background: rgba(255, 255, 255, 0.8);  /* Light white background with transparency */
     border-radius: 10px;  /* Optional: Rounds the corners of the content */
     padding: 30px;
@@ -349,9 +345,41 @@ form {
 }
 
 /* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .band {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+    }
+
+    .navbar {
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+
+    .welcome-section {
+        padding: 20px; /* Reduce padding on mobile */
+    }
+
+    .contact-header,
+    .about-me {
+        width: 90vw; /* Full width on mobile */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack footer links on mobile */
+    }
+
+    .specialties-grid {
+        grid-template-columns: 1fr; /* Single column for specialties on mobile */
+    }
+
+    .call-now-btn,
+    .know-more-btn {
+        width: 100%; /* Full width buttons */
+    }
+}
+
 @media (min-width: 450px) {
     .band {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
     }
 
     .nav-logo {
