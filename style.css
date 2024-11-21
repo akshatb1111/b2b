@@ -832,17 +832,16 @@ p {
 
 @media screen and (max-width: 768px) {
     footer {
-        text-align: center; /* Center-align all text */
+        text-align: center !important;
     }
-
     .footer-links {
-        display: flex;
-        flex-direction: column; /* Stack links vertically */
-        align-items: center;   /* Center the links horizontally */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
-
     .footer-links a {
-        margin: 5px 0; /* Add spacing between links */
+        margin: 5px 0 !important;
     }
 }
+
 
