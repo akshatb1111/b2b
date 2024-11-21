@@ -829,3 +829,20 @@ p {
         max-width: 100%; /* Ensure the widgets take full width on smaller screens */
     }
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        text-align: center; /* Center-align all text */
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;   /* Center the links horizontally */
+    }
+
+    .footer-links a {
+        margin: 5px 0; /* Add spacing between links */
+    }
+}
+
