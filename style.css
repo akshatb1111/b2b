@@ -991,3 +991,39 @@ p {
     text-transform: uppercase;
 }
 
+/* Custom Styling for the Video Section */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure video doesn't stretch beyond container limits */
+video {
+    max-height: 80vh;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+/* Button hover effect */
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* Additional spacing */
+h3 {
+    font-size: 1.75rem;
+    color: #333;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
