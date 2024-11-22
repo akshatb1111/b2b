@@ -1026,4 +1026,22 @@ p {
     line-height: 1.6;
 }
 
+/* Styling for the pink button */
+.btn-pink {
+    background-color: #ff66b2; /* Soft pink color */
+    border: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+    background-color: #ff3399; /* Darker pink for hover */
+    transform: scale(1.05);    /* Slight zoom on hover */
+}
+
+.btn-pink:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff99cc; /* Subtle glow effect */
+}
+
 
