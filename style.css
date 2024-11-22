@@ -944,3 +944,50 @@ p {
     font-size: 1.1rem;
   }
 }
+
+/* Custom Styling for the Updates Section */
+.updates-widget {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    border-radius: 8px;
+}
+
+.updates-header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Card hover effects for buttons */
+.btn:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+/* Making text and button more visually appealing */
+h3 {
+    font-size: 1.75rem;
+    color: #333;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Adding some shadow and spacing to buttons */
+.btn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
