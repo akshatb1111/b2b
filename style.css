@@ -951,53 +951,23 @@ p {
     margin-bottom: 50px;
     background: url('update-bg.png') no-repeat center center / cover;
     padding: 40px 0;
-    border-radius: 8px;
+    border-radius: 20px; /* Rounded corners for the widget */
+    color: #fff; /* All text is white for better contrast */
+    overflow: hidden; /* Ensures content respects rounded corners */
 }
 
 .updates-header {
     font-size: 2rem;
     font-weight: 600;
-    color: #333;
+    color: #fff; /* White text for the header */
+    margin-bottom: 20px;
 }
 
+/* Video Box Styling */
 .video-container {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Card hover effects for buttons */
-.btn:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease;
-}
-
-/* Making text and button more visually appealing */
-h3 {
-    font-size: 1.75rem;
-    color: #333;
-    font-weight: 500;
-}
-
-p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Adding some shadow and spacing to buttons */
-.btn {
-    padding: 10px 30px;
-    border-radius: 30px;
-    text-transform: uppercase;
-}
-
-/* Custom Styling for the Video Section */
-.video-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
+    border-radius: 20px; /* Rounded corners for the video box */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -1007,27 +977,55 @@ video {
     object-fit: contain;
     width: 100%;
     height: auto;
+    border-radius: 20px; /* Apply rounded corners to the video element */
 }
 
-/* Button hover effect */
+/* Button Styling */
+.btn {
+    padding: 10px 30px;
+    border-radius: 30px; /* Rounded buttons */
+    text-transform: uppercase;
+    background-color: #007bff; /* Primary blue color */
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
 .btn:hover {
     transform: scale(1.05);
-    transition: 0.3s ease;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-/* Additional spacing */
+/* Section Header Styling */
 h3 {
     font-size: 1.75rem;
-    color: #333;
+    color: #fff; /* White text for headers */
     font-weight: 500;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 p {
     font-size: 1rem;
-    color: #555;
+    color: #fff; /* White text for paragraphs */
     line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* Adding some shadow and spacing to buttons */
+.text-center .btn {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
 
-
-
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .updates-header {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+}
