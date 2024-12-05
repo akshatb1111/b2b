@@ -953,56 +953,24 @@ p {
     background: url('update-bg.png') no-repeat center center / cover;
     padding: 40px 0;
     border-radius: 8px;
+    background-color: #000; /* Fallback for background */
 }
 
+/* Section Header */
 .updates-header {
     font-size: 2rem;
     font-weight: 600;
-    color: #333;
+    color: #fff; /* White text for contrast */
 }
 
+/* Video Section */
 .video-container {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2); /* Softer shadow for dark background */
 }
 
-/* Card hover effects for buttons */
-.btn:hover {
-    transform: scale(1.05);
-    transition: 0.3s ease;
-}
-
-/* Making text and button more visually appealing */
-h3 {
-    font-size: 1.75rem;
-    color: #333;
-    font-weight: 500;
-}
-
-p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Adding some shadow and spacing to buttons */
-.btn {
-    padding: 10px 30px;
-    border-radius: 30px;
-    text-transform: uppercase;
-}
-
-/* Custom Styling for the Video Section */
-.video-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Ensure video doesn't stretch beyond container limits */
 video {
     max-height: 80vh;
     object-fit: contain;
@@ -1010,21 +978,51 @@ video {
     height: auto;
 }
 
-/* Button hover effect */
-.btn:hover {
-    transform: scale(1.05);
+/* Button Styling */
+.btn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    background-color: #fff; /* White button background */
+    color: #000; /* Dark text for contrast */
     transition: 0.3s ease;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.3);
 }
 
-/* Additional spacing */
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #ccc; /* Slightly darker hover effect */
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+}
+
+/* Text Styling */
 h3 {
     font-size: 1.75rem;
-    color: #333;
+    color: #fff; /* White text */
     font-weight: 500;
+    margin-bottom: 15px;
 }
 
 p {
     font-size: 1rem;
-    color: #555;
+    color: #f5f5f5; /* Slightly off-white for better readability */
     line-height: 1.6;
+    margin-bottom: 15px;
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .updates-header {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 8px 20px;
+    }
+}
+
